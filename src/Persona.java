@@ -5,4 +5,26 @@ public class Persona {
     Para todas las clases de la jerarquía tenga en cuenta los métodos getter, un constructor y el toString() con sobre-escritura,
     para Gerente además el método setter de presupuesto.
     También incluir una clase main con algún ejemplo de un Gerente e imprimir todos sus datos (y heredados) vía toString().*/
+
+    private String nombre;
+    private String apellido;
+    private String numeroFiscal;
+    private String direccion;
+
+    public Persona(String nombre, String apellido, String numeroFiscal, String direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroFiscal = numeroFiscal;
+        this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", numeroFiscal='" + numeroFiscal + '\'' +
+                ", direccion='" + direccion + '\'' +
+                '}';
+    }
 }
